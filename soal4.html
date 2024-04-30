@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Rumus Matematika Soal 4</title>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <br />
+    <div class="navbar">
+      <div>Pemrograman Web</div>
+      <div>
+        <a href="index.html">Soal 1</a>
+        <a href="soal2.html">Soal 2</a>
+        <a href="soal3.html">Soal 3</a>
+        <a href="soal4.html">Soal 4</a>
+        <a href="soal5.html">Soal 5</a>
+      </div>
+    </div>
+    <br />
+
+    <!-- Soal 4 -->
+    <div class="Penjelasan">
+      <h2 class="Block">Soal 4</h2>
+      <p style="font-weight: bold; font-size: 25px">
+        Carilah Nilai X pada Soal dibawah ini !
+      </p>
+      <br />
+      <h2>$$ p = 1 + \frac{{nx}}{{1}} + \frac{{n(n-1)x^2}}{{2}} $$</h2>
+    </div>
+
+    <h2 class="Block-Mid">Penyelesaian</h2>
+
+    <div class="Soal-1">
+      <p style="font-size: 20px">
+        Masukkan Nilai n :
+        <input
+          class="form__field"
+          style="font-size: 20px"
+          type="number"
+          id="inputN"
+          placeholder="Nilai n"
+        /><br />
+      </p>
+
+      <p style="font-size: 20px">
+        Masukkan Nilai x :
+        <input
+          class="form__field"
+          style="font-size: 20px"
+          type="number"
+          id="inputX"
+          placeholder="Nilai x"
+        />
+      </p>
+    </div>
+
+    <div class="Soal-1">
+      <p class="Block-Mid"></p>
+      <button
+        class="Proses-btn"
+        style="margin: 0 30px 0 30px; border-radius: 30px; font-weight: bold"
+        onclick="Soal4()"
+      >
+        Hitung
+      </button>
+      <p class="Block-Mid"></p>
+    </div>
+
+    <div
+      class="Penjelasan"
+      style="padding: 20pxpx 0 0 20px; border-radius: 20px; margin-bottom: 40px"
+    >
+      <h2>
+        Hasil :
+        <h2 id="hasil4"></h2>
+      </h2>
+    </div>
+
+    <div class="Penjelasan">
+      <h1>Penjelasan Rumus</h1>
+      <p>Berikut penjelasan Mengenai Rumus Diatas :</p>
+      <p>
+        Untuk mengetahui nilai P, pengguna harus memasukkan nilai x dan n
+        terlebih dahulu <br />
+        Kemudian, kami telah menyusun rumus dari soal di atas agar dapat
+        dipahami oleh Operator JavaScript <br /><br />
+        Maka Diperoleh Rumus sebagai berikut : <br />
+        p = 1 + (n * x) / 1 + (n * (n - 1) * Math.pow(x, 2)) / 2
+        <br /><br />
+
+        Hasil perhitungannya akan ditampilkan di bagian Hasil.
+      </p>
+    </div>
+    <hr />
+  </body>
+</html>

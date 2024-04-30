@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <title>Menghitung Rumus Sederhana</title>
+  </head>
+  <body>
+    <br />
+    <div class="navbar">
+      <div>Pemrograman Web</div>
+      <div>
+        <a href="index.html">Soal 1</a>
+        <a href="soal2.html">Soal 2</a>
+        <a href="soal3.html">Soal 3</a>
+        <a href="soal4.html">Soal 4</a>
+        <a href="soal5.html">Soal 5</a>
+      </div>
+    </div>
+    <br />
+    <div class="header-content">
+      <div>
+        <h1>MENGHITUNG RUMUS SEDERHANA</h1>
+        <p>
+          Website ini disusun dengan tujuan utama untuk menyelesaikan
+          persyaratan dari Mata Kuliah Pemrograman Web, yang menuntut pembuatan
+          situs web yang mampu menjalankan rumus-rumus dasar yang sudah
+          diajarkan sebelumnya.
+        </p>
+        <p class="Block">Ayo Mulai !</p>
+      </div>
+      <div class="Programmer-img"></div>
+    </div>
+
+    <!-- SOAL 1 -->
+    <div class="Soal-1">
+      <div class="box-soal">
+        <h3 class="Block">Soal 1</h3>
+        <h1>Menghitung Posisi Kuadran</h1>
+        <p>Silahkan Input Nilai X dan Y Pada kolom di bawah ini.</p>
+
+        <label for="x"> Nilai X : </label>
+        <input type="number" id="x" /><br />
+
+        <label for="y"> Nilai Y : </label>
+        <input type="number" id="y" /><br /><br />
+
+        <button class="Proses-btn" onclick="Kuadran()">Proses</button><br />
+        <p>Hasil : <span id="result1"></span></p>
+      </div>
+
+      <div class="img-Soal1">
+        <img src="img/Soal1.png" alt="Kuadran" width="280px" height="280px" />
+      </div>
+    </div>
+
+    <div class="Penjelasan">
+      <h1>Penjelasan Rumus</h1>
+      <p>Berikut penjelasan Mengenai Rumus Diatas :</p>
+      <p>
+        Operator diatas mengambil nilai x dan y dari Inputan Pengguna di HTML
+        dengan ID "x" dan "y". <br /><br />
+        > Jika x dan y positif, titik tersebut berada di Kuadran I. <br />
+        > Jika x negatif dan y positif, titik tersebut berada di Kuadran II.
+        <br />
+        > Jika x dan y negatif, titik tersebut berada di Kuadran III. <br />
+        > Jika x positif dan y negatif, titik tersebut berada di Kuadran IV.
+        <br />
+        > Jika kedua nilai tersebut nol, maka titik tersebut berada di titik
+        asal atau di atas sumbu koordinat.<br /><br />
+        Hasilnya ditampilkan pada Bagian Hasil.
+      </p>
+    </div>
+    <hr />
+    <footer></footer>
+  </body>
+</html>
